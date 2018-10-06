@@ -28,11 +28,11 @@ const splitInput = units => {
 
 const ConvertUnits = units => {
   let split = splitInput(units);
-  let translated = split.map(u => intoSi(u, 'siSymbol')).join('');
+  let unit_name = split.map(u => intoSi(u, 'siSymbol')).join('');
   let factored = split.map(u => intoSi(u, 'siAmount')).join('');
 
   return {
-    unit_name: translated,
+    unit_name,
     multiplication_factor: Number(eval(factored).toFixed(14)),
   };
 };

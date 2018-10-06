@@ -34,14 +34,14 @@ module.exports = [
   },
   {
     name: 'arcminute',
-    symbol: 'min',
+    symbol: ''',
     quantity: 'unitless/plane angle',
     siAmount: ARCMINUTE,
     siSymbol: 'rad',
   },
   {
     name: 'arcsecond',
-    symbol: 'min',
+    symbol: '"',
     quantity: 'unitless/plane angle',
     siAmount: ARCSECOND,
     siSymbol: 'rad',
